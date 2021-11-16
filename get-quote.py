@@ -1,11 +1,15 @@
+import random
+
+f = open("quotes.txt")
+quotes = f.readlines()
+last = len(quotes) - 1
+rnd = random.randint(0, last)
+
 def main():
-  print("Keep it logically awesome. Test.")
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+  f.close()
 
-  #print(quotes)
+  print(quotes[rnd])
 
 if __name__== "__main__":
   main()
